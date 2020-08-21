@@ -15,7 +15,13 @@ public class DifferenceCipher {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        String originalText = Utils.readString();
+        
+        String[] decompositedText = StringTreatment.decompositeString(originalText);
+        
+        int[] encryptedText = Cipher.encryptText(decompositedText);
+        
+        String decryptedText = Cipher.decryptText(encryptedText);
     }
     
 }
