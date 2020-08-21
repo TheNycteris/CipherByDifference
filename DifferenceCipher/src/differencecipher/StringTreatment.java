@@ -12,6 +12,8 @@ package differencecipher;
 public class StringTreatment {
     public static String[] decompositeString(String originalText){
         String[] decompositedText = originalText.split("");
+        //Save each character of the string into array.
+        
         return decompositedText;   
     }
 }
